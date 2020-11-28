@@ -65,13 +65,16 @@ void fcfs(int n, int p[][4]){
 	int time = 0;
 	int done = 0;
 	
-
+	printf("test1\n");
 	while(!done){
+		printf("test2\n");
 		printf("%d ", time);
+		printf("test3\n");
 		for(int i = 0; i < n; i++){
 			if(p[i][3] == time)
 				add(queue, i, n);
 			}
+		printf("test4\n");
 		for(int j = 0; j < n; j++){
 			if(isContained(queue, j, n)){
 				if(queue[0] == j){
